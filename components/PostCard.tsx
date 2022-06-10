@@ -15,7 +15,7 @@ const PostCard = ({ post }: post) => {
           src={urlFor(post?.mainImage).url()!}
           alt="post image"
         />
-        <div className="flex justify-between p-5 bg-white">
+        <div className="flex justify-between items-center p-5 bg-white">
           <div>
             <p className="text-lg font-bold">{post.title}</p>
             <p className="text-sm">
@@ -23,7 +23,7 @@ const PostCard = ({ post }: post) => {
             </p>
           </div>
           <img
-            className="h-12 w-12 rounded-full ml-4"
+            className="h-14 w-14 rounded-full ml-4"
             src={urlFor(post.author.image).url()}
             alt="author avatar"
           />
