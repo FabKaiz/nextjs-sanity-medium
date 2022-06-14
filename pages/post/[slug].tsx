@@ -17,7 +17,7 @@ const PostPage = ({ post }: Props) => {
       <main>
         {/* Header img */}
         <img
-          className="w-full h-60 object-cover"
+          className="w-full h-80 object-cover mt-14"
           src={urlFor(post.mainImage).url()!}
           alt="post image"
         />
