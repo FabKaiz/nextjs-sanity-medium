@@ -15,7 +15,7 @@ const Home: NextPage<Props> = ({ posts }) => {
   return (
     <div className="relative pt-11">
       <Head>
-        <title>Create Next App</title>
+        <title>Medium Clone - FabKaiz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
