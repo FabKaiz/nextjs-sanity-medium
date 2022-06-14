@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Posts from '../components/Posts'
 import { sanityClient } from '../sanity.js'
 import { Post } from '../typings'
+import Footer from '../components/Footer'
 
 interface Props {
   posts: [Post]
@@ -12,7 +13,7 @@ interface Props {
 
 const Home: NextPage<Props> = ({ posts }) => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="relative pt-11">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,7 +21,10 @@ const Home: NextPage<Props> = ({ posts }) => {
 
       <Navbar />
       <Header />
-      <Posts posts={posts} />
+      <div className="max-w-7xl mx-auto">
+        <Posts posts={posts} />
+      </div>
+      <Footer />
     </div>
   )
 }
